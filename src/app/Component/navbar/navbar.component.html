@@ -1,0 +1,8 @@
+<nav>
+    <ul>
+        <li *ngFor="let menu of menus">
+            <a class="nav-link" href="{{menu.path}}"> {{menu.name}}</a>
+          </li>
+    </ul>
+    <button (click)="addMenu()">Add Menu</button>
+</nav>
